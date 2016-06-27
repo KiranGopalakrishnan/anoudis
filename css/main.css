@@ -168,9 +168,9 @@ strong { font-weight: 600; }
 }
 .signupContain p.big{
   font-size: 27px !important;
-  color: #000 !important;
+  color: #27ae60 !important;
   font-family: 'Open Sans', sans-serif;
-  font-weight: 300;
+  font-weight: bold;
 }
 .signupContain p.small{
   font-size: 20px !important;
@@ -178,7 +178,7 @@ strong { font-weight: 600; }
 
 .btn:hover {
   color: #fff;
-  background-color: #fa5454;
+  background-color: #27ae60;
 }
 
 .btn:active,

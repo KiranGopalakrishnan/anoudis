@@ -1,0 +1,84 @@
+/* 
+    Document   : home
+    Created on : 12 Aug, 2015, 7:36:12 PM
+    Author     : Kiran
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+root { 
+    display: block;
+}
+
+.timelineColumnOne{
+    width: 32%;
+    float: left;
+    padding: 0.2%;
+    margin-left: 2%;
+}
+.timelineColumnTwo{
+    width: 32%;
+    float: left;
+    padding: 0.2%;
+}
+.timelineColumnThree{
+    width: 32%;
+    float: left;
+    padding: 0.2%;
+}
+
+.rightSideSingleItemTitle{
+    float: left;
+    width:100%;
+}
+.rightSideTitle{
+    padding: 7%;
+    font-family: 'Roboto', sans-serif;
+    font-weight:bold;
+    color:#666;
+    text-align: center;
+    border-bottom: solid 1px #ccc;
+}
+.trendingSingle{
+    float: left;
+    width:94%;
+    padding:3%;
+    font-family: 'Roboto', sans-serif;
+    font-weight:bold;
+    text-align: left;
+    font-size:12px;
+}
+.trendingSingle .subDetail{
+    font-size: 10px;
+    padding: 1%;
+    float:left;
+    margin-left: 1%;
+    width:90%;
+}
+.trendingSingle .mainDetail{
+    font-size: 13px;
+    padding: 1%;
+    float:left;
+    margin-left: 2%;
+}
+.trendingSingle img{
+    font-size: 10px;
+    padding: 1%;
+    float:left;
+    margin-left: 1%;
+}
+.searchBar{
+    float: left;
+    width:90%;
+    padding: 5%;
+}
+.searchBox{
+    float: left;
+    width:60%;
+    padding:2%;
+    border: solid 1px #e3e3e3;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    color: #666;
+
+}

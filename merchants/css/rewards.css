@@ -1,0 +1,209 @@
+.notSubscribed{
+    width:70%;
+    margin-left: 10%;
+    float: left;
+    padding: 5%;
+    margin-top: 5%;
+    border: solid 1px #e6e6e6;
+    background: #fbfbfb;
+}
+.subscribeToRewards{
+    width:96%;
+    float: left;
+    padding: 3%;
+    text-align: center;
+}
+.atText{
+    font-family: 'Roboto', sans-serif;
+    font-size: 30px;
+    color: #979797;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    font-weight: 300;
+    float: left;
+    width:100%;
+}
+.startButton{
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    color: #fff;
+    background: #2ecc71;
+    border-radius: 5px;
+    float: left;
+    width: 40%;
+    margin-left: 25%;
+    padding-left: 3%;
+    padding-right: 3%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+}
+.buyPoints{
+    width:70%;
+    margin-left: 10%;
+    float: left;
+    margin-top: 5%;
+    padding: 5%;
+    border: solid 1px #e6e6e6;
+}
+.pointsPackage{
+    width:15%;
+    border-radius: 100%;
+    padding: 5%;
+    height: 115px;
+    float: left;
+    transition: background 2s;
+}
+.pointsPackage:hover{
+    background:#8e44ad !important;
+    cursor: pointer;
+}
+.pointsCount{
+    color: #fff;
+    font-family: 'Roboto', sans-serif;
+    font-size: 30px;
+    float: left;
+    text-align: center;
+    margin-top: 25%;
+    width: 100%;
+    font-weight: bold;
+}
+.ptsText{
+    color: #FFF;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    float: left;
+    text-align: center;
+    width: 100%;
+}
+.gap{
+    margin-left: 8%;
+}
+.gap2{
+    margin-left: 4%;
+}
+.yellow{
+    background: #f39c12 !important;
+}
+.green{
+    background: #f1c40f !important;
+}
+.red{
+    background: #e67e22 !important;
+}
+.pointsRemaining{
+    width:70%;
+    margin-left: 10%;
+    float: left;
+    margin-top: 5%;
+    padding-top: 0px !important;
+    padding: 5%;
+    border: solid 1px #e6e6e6;
+}
+.remPoints{
+    width: 90%;
+    float: left;
+    padding: 10%;
+    font-size: 30px;
+    margin-top: 7%;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    color:#666;
+    border: solid 1px #ccc;
+    text-align: center;
+}
+.remPoints span{
+    font-size: 14px;
+    float: left;
+    width: 100%;
+    text-align: center;
+}
+.setDist{
+    float: left;
+    width:25%;
+    margin-left: 5%;
+    padding: 2.5%;
+    background: #fbfbfb;
+}
+.setDist input{
+    padding: 8%;
+    font-weight:bold;
+    width: 50%;
+    font-size: 20px;
+    border: solid 1px #ccc;
+    font-family: 'Roboto', sans-serif;
+}
+td{
+    width: 45%;
+    float: left;
+}
+.mDown{
+    margin-top: 7%;
+}
+table .space{
+    padding-left: 2%;
+}
+table tr{
+    float: left;
+    width: 100%;
+}
+table tr td{
+    padding: 2%;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    float: left;
+}
+.saveUpdate{
+    background: #8e44ad;
+    color: #fff;
+    font-size: 16px !important;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    padding: 2.5% !important;
+    float: right;
+    width:30%;
+    margin-left: 10%;
+    margin-top: 5%;
+    border:solid 1px #8e44ad;
+}
+.settedPoint{
+    padding: 15%;
+    padding-bottom: 18%;
+    padding-top: 18%;
+    width:35%;
+    float: left;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    color: #9b59b6;
+    font-size:18px;
+    background: #e9e9e9;
+    border-radius: 100%;
+
+}
+.rightSideRem{
+    float: left;
+    width: 25%;
+}
+.pointRegister{
+    width:76%;
+    margin-left: 10%;
+    float: left;
+    padding: 2%;
+    margin-top: 5%;
+    border: solid 1px #e6e6e6;
+}
+.regPointsSingle{
+    padding: 2%;
+    border: solid 1px #e3e3e3;
+    float: left;
+    width: 25%;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    font-size: 18px;
+    color:#999;
+    text-align: center;
+    margin: 2%;
+}
+.regPointsSingle span{
+    float: left;
+}

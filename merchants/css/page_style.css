@@ -1,0 +1,259 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+.main_wrapper .page_format {
+	position: relative;
+	width: 80%;
+	float: left;
+	max-width: 900px;
+	top: 0px;
+	padding-right: 20px;
+	padding-bottom: 20px;
+	margin-left: 2%;
+}
+.main_wrapper .single_info {
+	padding: 15px;
+}
+.main_wrapper #profileimg_wrapper {
+	position: absolute;
+	background-color: #FFF;
+	border: 7px solid #FFFFFF;
+	width: 95%;
+	height: 100%;
+	top: 0px;
+	left: 0px;
+}
+.main_wrapper .page_tabs .tab1 {
+	position: relative;
+	float: right;
+	padding: 20px;
+	margin-left: 10px;
+	background-color: #FFFFFF;
+	border: solid 1px #e2e2e2;
+}
+.main_wrapper .page_tabs {
+	position: relative;
+	float: right;
+}
+
+.main_wrapper .page_info .name_of_comp {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	font-weight: bold;
+	color: #000;
+	position: relative;
+	float: left;
+	margin-left: 20px;
+}
+.main_wrapper .page_info {
+	position: relative;
+	float: left;
+	width: 96%;
+	background-color: rgba(0,0,0,0.7);
+	top: -48px;
+	padding-top: 2%;
+	padding-right: 2%;
+	padding-bottom: 0%;
+	padding-left: 2%;
+}
+.main_wrapper .followers {
+	position: relative;
+	float: left;
+	width: 97.8%;
+	padding-top: 10px;
+	padding-right: 10px;
+	padding-bottom: 5px;
+	padding-left: 10px;
+	background-color: #FFFFFF;
+	margin-top: 10px;
+	border: 1px solid #E5E5E5;
+}
+.main_wrapper .followers_number {
+	position: relative;
+	float: left;
+	font-family: Arial, Helvetica, sans-serif;
+	color: #999999;
+	padding: 15px;
+	margin-top: 5px;
+	margin-right: 10px;
+	margin-bottom: 10px;
+	margin-left: 10px;
+}
+.main_wrapper .followers_number .flclr {
+	font-weight: bold;
+	color: #CE2F00;
+}
+.main_wrapper .connect_with_this_page {
+	padding: 10px;
+	float: right;
+	margin-top: 15px;
+	background-color: #CE2F00;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-weight: bold;
+	color: #FFF;
+}
+.main_wrapper .connect_with_this_page .connection_round {
+	position: relative;
+	height: 10px;
+	width: 10px;
+	float: left;
+	margin-right: 7px;
+	border: MEDIUM solid #FFF;
+	top: 1px;
+	border-radius: 10px;
+}
+.main_wrapper .connect_with_this_page .connect_txt {
+	position: relative;
+	top: 2px;
+}
+.main_wrapper .connect_with_this_page:hover {
+	cursor: pointer;
+}
+.main_wrapper .descriptions {
+	position: relative;
+	width: 100%;
+	text-align: center;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-weight: bold;
+	left: 0px;
+	border: 1px solid #E2E2E2;
+	background-color: #FFF;
+	float: left;
+	top: 20px;
+	margin-bottom: 25px;
+}
+.main_wrapper .descriptions .desc_title {
+	color: #999;
+	padding: 13px;
+	border-bottom: solid 1px #E2E2E2;
+	background-color: #FFFFFF;
+}
+.main_wrapper .descriptions .description_content {
+	border-bottom: solid 1px #F0F0F0;
+	text-align: justify;
+	color: #999999;
+	font-weight: normal;
+	padding-top: 10px;
+	padding-right: 5px;
+	padding-bottom: 10px;
+	padding-left: 5px;
+	margin-left: 8px;
+	margin-right: 8px;
+	float: left;
+	width: 91%;
+}
+.main_wrapper .page_format .page_info_and_interests {
+	position: relative;
+	width: 33%;
+	float: left;
+	top: 20px;
+}
+.main_wrapper .page_format .page_info_and_interests .descriptions .single_interest {
+	position: relative;
+	float: left;
+	font-size: 9px;
+	color: #666;
+	width: 95px;
+	height: 90px;
+	margin-left: 2px;
+	margin-top: 3px;
+	margin-right: 2px;
+	margin-bottom: 3px;
+}
+.main_wrapper .page_format .page_info_and_interests .descriptions .single_interest .title {
+	position: relative;
+	width: 50%;
+	left: 25%;
+}
+.main_wrapper .page_format .page_info .name_of_comp.page_name {
+	font-size: 16px;
+}
+.main_wrapper .page_format .page_info_and_interests .descriptions.about_desc .description_content .about_content {
+	position: relative;
+	width: 80%;
+	left: 5%;
+	float: left;
+}
+.main_wrapper .page_format .page_info_and_interests .descriptions.about_desc .description_content img {
+	position: relative;
+	top: 1px;
+}
+.main_wrapper .page_format .page_info_and_interests .descriptions.about_desc .description_content .about_icon {
+	position: relative;
+	float: left;
+	top: 2px;
+}
+.main_wrapper .page_format .profile_cover .profile_image_new {
+	position: relative;
+	width: 30%;
+	float: left;
+	height: 260px;
+	background-color: #FFF;
+}
+.main_wrapper .page_format .profile_cover .profile_image_new .head_bar {
+	padding: 5px;
+	position: absolute;
+	width: 95.5%;
+	top: 96%;
+}
+.main_wrapper .page_format .profile_cover .profile_image_new .head_bar .head_bar1 {
+	width: 34%;
+	background: #E4917E;
+	position: absolute;
+	height: 100%;
+	top: 0px;
+	left: 0px;
+}
+.main_wrapper .page_format .profile_cover .profile_image_new .head_bar .head_bar2 {
+	width: 33%;
+	background: #7BC5D0;
+	position: absolute;
+	height: 100%;
+	top: 0px;
+	left: 33%;
+}
+.main_wrapper .page_format .profile_cover .profile_image_new .head_bar .head_bar3 {
+	width: 35%;
+	background: #FFC476;
+	position: absolute;
+	height: 100%;
+	top: 0px;
+	left: 66%;
+}
+.main_wrapper .page_format .profile_cover .profile_image_new #profileimg_wrapper img {
+
+}
+
+.main_wrapper .page_format .profile_cover .profile_info_and_cover {
+	position: relative;
+	width: 100%;
+	height: 350px;
+	background-color: #FFF;
+	text-align: justify;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+}
+.main_wrapper .page_format .profile_cover .profile_info_and_cover .profile_desc {
+	position: relative;
+	top: 30px;
+	margin-left: 5%;
+	margin-right: 5%;
+	color: #999;
+}
+.main_wrapper .page_format .profile_cover .profile_image_new img {
+	position: relative;
+	left: 15%;
+	top: 15%;
+}
+.main_wrapper .page_format .profile_cover .profile_image_new .profile_image {
+	position: absolute;
+	height: 30%;
+	left: 15%;
+	top: 15%;
+}
+.main_wrapper .page_format .profile_cover .profile_image_new .profile_image img {
+	border-radius: 100px;
+}

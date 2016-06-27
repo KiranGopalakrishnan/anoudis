@@ -1,0 +1,39 @@
+/* 
+    Document   : coupons
+    Created on : 27 Dec, 2015, 11:58:16 PM
+    Author     : Kiran
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+root { 
+    display: block;
+}
+.coupon{
+    width:40%;
+    height:auto;
+    margin-left : 5%;
+    margin-top: 3%;
+}
+.c_head{
+    background: #2ecc71;
+    text-align: center;
+    padding:15px;
+    color:#fff;
+    font-family : 'lato';
+}
+.c_content{
+    color:#666;
+    font-family: 'lato';
+    font-size: 16px;
+    text-align: center;
+    padding:15px;
+}
+project{
+    font-size: 50px;
+    color: #999 !important;
+}
+target{
+    color: #c0392b !important;
+}
+

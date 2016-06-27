@@ -1,0 +1,56 @@
+form{
+    width:70%;
+    padding: 4%;
+    float: left;
+    margin-top: 5%;
+    margin-left: 10%;
+    border: solid 1px #e1e1e1 !important;
+}
+.first,.second{
+    float: left;
+    width: 47%;
+}
+.second{
+    margin-left: 5%;
+}
+.signupForm{
+    margin-left: 30% !important;
+}
+.loginForm{
+    margin-left: 37.5% !important;
+    margin-top: 13% !important;
+}
+input,textarea,select{
+    border-radius: 10px !important;
+    width: 92%;
+    padding: 4%;
+    margin-top: 5%;
+    border: solid 1px #e3e3e3;
+    float: left;
+    color: #666;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+}
+select{
+    width: 100%;
+}
+textarea{
+    height: 100px;
+    resize: none;
+}
+.submit{
+    width: 100%;
+    background: #2ecc71;
+    color: #fff;
+}
+.formTitle{
+    color: #666;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    margin-bottom: 2%;
+    text-align: center;
+}
+form .address{
+    width: 40%;
+    margin-left: 1.4%;
+}

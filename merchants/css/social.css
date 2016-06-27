@@ -1,0 +1,228 @@
+.topEngInsightWrapper{
+    float: left;
+    width:92%;
+    margin-left: 8%;
+}
+.customerMetrics{
+    width:31%;
+    float:left;
+    margin: 1%;
+}
+.reachCustomers{
+    float: left;
+}
+.engCustomersTitle{
+    width:90%;
+    padding:5%;
+    font-family: 'Roboto', sans-serif;
+    color:#666;
+    text-align: center;
+}
+.businessReachCount{
+    font-family: 'Roboto', sans-serif;
+    font-size: 70px;
+    font-weight:100;
+    color: #666;
+    text-align: center;
+}
+.checkinCustomers{
+    float: left;
+}
+.checkinCount{
+    font-family: 'Roboto', sans-serif;
+    font-size: 70px;
+    font-weight:100;
+    color: #666;
+    text-align: center;
+}
+.dealCustomers{
+    float: left;
+}
+.dealCount{
+    font-family: 'Roboto', sans-serif;
+    font-size: 70px;
+    font-weight:100;
+    color: #666;
+    text-align: center;
+}
+.attributeProgress{
+    font-family: 'Roboto', sans-serif;
+    float: right;
+    width:20%;
+    padding-top:15%;
+    padding-bottom:15%;
+}
+.increase{
+    color:#2ecc71;
+}
+.decrease{
+    color:#e74c3c;
+}
+.widgetInnerWrap{
+    float: left;
+    width:80%;
+}
+.nextBlockHeading{
+    font-family:  'Roboto', sans-serif;
+    width:70%;
+    font-weight: bold;
+    padding:3%;
+    font-size:25px;
+    margin-left: 8%;
+    margin-top: 5%;
+    float:left;
+    color: #666;
+}
+
+.socialNotSynced{
+    float: left;
+    margin-left: 8%;
+    width: 92%;
+    overflow: hidden;
+}
+.fbSync{
+    width:25%;
+    margin-left:3%;
+    margin-right:1%;
+    margin-top:2%;
+    margin-bottom:2%;
+    float:left;
+    border:solid 1px #f1f1f1;
+    background: #383F87;
+    text-align: center;
+    padding: 3%;
+}
+.center_content_wrapper{
+    width: 100% !important;
+}
+.twitterSync{
+    width:25%;
+    margin-left:5%;
+    margin-top:2%;
+    margin-bottom:2%;
+    float:left;
+    border:solid 1px #f1f1f1;
+    background: #1CB7EB;
+    text-align: center;
+    padding: 3%;
+}
+.whyTwitter{
+    width:50%;
+    margin-right:5%;
+    margin-top:2%;
+    margin-bottom:2%;
+    background: #fafafa;
+    float: left;
+    padding: 3%;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    color:#666;
+}
+.whyTwitter .whyTitle{
+    padding: 1%;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    color:#666;
+    font-size: 20px;
+}
+.whyTwitter li.last{
+    padding-bottom: 0% !important;
+}
+.whyTwitter li{
+    padding: 3%;
+}
+.syncButton{
+    width:40%;
+    padding-left:2%;
+    padding-right:2%;
+    padding: 3%;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    border-radius: 10px;
+    margin-left: 28%;
+    font-size: 13px;
+    font-weight: bold;
+}
+.fb{
+    background: #FFFFFF;
+    color:#383F87;
+}
+.twitter{
+    background: #FFFFFF;
+    color:#1CB7EB;
+}
+.fbImg{
+}
+.fbText{
+    font-family: 'Roboto', sans-serif;
+    padding: 8%;
+    padding-left: 5%;
+    padding-right: 5%;
+    color:#fff;
+    font-weight: bold;
+}
+.metricGraph{
+    float: left;
+    width:92%;
+    margin-left: 8%;
+}
+.pageSelecter{
+    width:28%;
+    float:left;
+    position: relative;
+    left:35%;
+    padding: 2%;
+    background: #fafafa;
+    max-height: 330px;
+}
+.pageSelecterSingle{
+    padding-right: 2%;
+    padding-left: 2%;
+    padding-bottom: 3%;
+    border-bottom: solid 1px #fafafa;
+    padding-top: 3%;
+    float: left;
+    font-family: 'Roboto', sans-serif;
+    font-weight:bold;
+    color:#666;
+    text-align: left;
+    width:90%;
+    -webkit-transition: background 1s; /* Safari */
+    transition: background 1s;
+    -webkit-transition: border-bottom 2s; /* Safari */
+    transition: border-bottom 2s;
+}
+.pageSelecterSingle:hover{
+    background: #ffffff;
+    border-bottom: solid 1px #27ae60;
+    cursor: pointer;
+}
+.pageSelecter .title{
+    padding-right: 2%;
+    padding-left: 2%;
+    padding-bottom: 3%;
+    padding-top: 3%;
+    float: left;
+    font-family: 'Roboto', sans-serif;
+    font-weight:bold;
+    color:#2c3e50;
+    text-align: center;
+    border-bottom: solid 1px #ccc;
+    width:90%;
+}
+.pageHolder{
+    float: left;
+    width:100%;
+    max-height: 300px;
+    overflow-y: auto;
+    margin-top: 2%;
+}
+.pageSelecterSingle img{
+    margin-right: 7%;
+    float:left;
+}
+.pageSelecterSingle span{
+    margin-top: 6%;
+    float:left;
+    font-weight: bold;
+}

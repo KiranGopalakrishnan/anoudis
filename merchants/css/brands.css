@@ -1,0 +1,46 @@
+/* 
+    Document   : brands
+    Created on : 28 Dec, 2015, 2:27:38 PM
+    Author     : Kiran
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+root { 
+    display: block;
+}
+.brandGrid{
+    width:20%;
+    height:20%;
+    background: #fff;
+    margin: 2%;
+    float:left;
+    border: solid 1px #e8e8e8;
+}
+.brandImage{
+    height:80%;
+    float:left;
+    width:100%;
+}
+.brandImage img{
+    height:100%;
+    width:100%;
+}
+.brandName{
+    font-family: "Quarca ConReg gdi";
+    font-size: 25px;
+    text-align:center;
+    width:90%;
+    color:#666;
+    height:20%;
+    float:left;
+    padding: 5%;
+}
+/*.......Search Box.........*/
+
+.searchBox{
+    padding: 10px;
+    width:80%;
+    border: solid 1px #f5f5f5;
+    margin: 3%;
+}

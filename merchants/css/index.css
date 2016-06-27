@@ -1,0 +1,25 @@
+/* 
+    Document   : index
+    Created on : 13 Aug, 2015, 10:28:23 PM
+    Author     : Kiran
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+root { 
+    display: block;
+}
+.frontBanner{
+    /*background-image: url("../images/index/bg.png");*/
+    background: #fbfbfb;
+    width: 100%;
+    height: 550px;
+}
+.PhoneImage{
+    margin-top: 5%;
+    margin-left: 5%;
+}
+.ProductQuotes{
+    font-family: 'lato';
+    
+}

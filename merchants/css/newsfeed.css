@@ -1,0 +1,213 @@
+/* 
+    Document   : newsfeed
+    Created on : 15 Feb, 2016, 10:52:56 PM
+    Author     : Kiran
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+root { 
+    display: block;
+}
+.main_wrapper{
+    /*background: #f4d6de !important;*/
+}
+.post{
+    float: left;
+    width:50%;
+    left:15%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    border:solid 1px #e1e1e1;
+    box-shadow: 5px 5px 5px 0px #e6e6e6;
+}
+.postTopContainer{
+    padding: 7%; 
+    font-family: 'Roboto', sans-serif;
+}
+.postBottomContainer{
+    padding: 2%;
+    font-family: 'Roboto', sans-serif;
+    float:left;
+    width:92%;
+}
+.postBottomContainer .profile_icon{
+    border-radius: 300px;
+    border: 1px #e2e2e2 solid;
+    font-family: 'Roboto', sans-serif;
+    float: left;
+    margin-top: 2%;
+}
+.postBy{
+    color:#666;
+    float: left;
+    font-weight: bold;
+    padding-top: 6%;
+    padding-left: 3%;
+}
+.postedOn{
+    color:#2c3e50;
+    margin-left: 2%;
+    float: left;
+    margin-top: 6.5%;
+    padding: 3px;
+    font-weight: bold;
+    padding-left: 6px;
+    padding-right: 6px;
+    background: #e9e9e9;
+    font-size: 10px;
+    border-radius: 20px;
+}
+.postedFrom{
+    color:#2c3e50;
+    margin-left: 2%;
+    float: left;
+    margin-top: 6.5%;
+    padding: 3px;
+    font-weight: bold;
+    padding-left: 6px;
+    padding-right: 6px;
+    font-size: 10px;
+    border:0px !important;
+}
+.postReach{
+    width:18%;
+    color:#2c3e50;
+    margin-left: 5%;
+    float: left;
+    margin-top: 3.6%;
+    padding: 3px;
+    font-weight: bold;
+    padding-left: 6px;
+    padding-right: 6px;
+    font-size: 13px;
+    border:0px !important;
+}
+.postReach span,img{
+    float: left;
+}
+.postPulse img ,.postReach img{
+    margin-top: 10%;
+}
+.postReach span{
+    margin-top: 17%;
+    margin-left: 5%;
+}
+.postPulse{
+    width:18%;
+    color:#2c3e50;
+    margin-left: 5%;
+    float: left;
+    margin-top: 3.6%;
+    padding: 3px;
+    font-weight: bold;
+    padding-left: 6px;
+    padding-right: 6px;
+    font-size: 13px;
+    border:0px !important;
+}
+.postPulse span,img{
+    float: left;
+}
+.postPulse span{
+    margin-top: 17%;
+    margin-left: 5%;
+}
+.postContent{
+    padding: 3%;
+    float: left;
+    font-weight:bold;
+}
+.photoPost .postTopContainer{
+    padding: 0px !important;
+}
+.offer .offer_image{
+    height:250px;
+    width:100%;
+    background-repeat: no-repeat;
+    background-size: 100%,contain;
+}
+.offer .offerTitle{
+    float: left;
+    background: #fff;
+    padding: 5px;
+    bottom:0;
+    
+}
+
+.offer .postTopContainer{
+    padding: 0px !important;
+}
+.offer .postContent{
+    padding: 4%;
+    float:left;
+    width:92%;
+}
+.offer .date {
+    font-size: 12px;
+    float:left;
+}
+.offer .offer_validity{
+    float:left;
+    width:100%;
+}
+.offer .validFrom{
+    background: #f1c40f;
+    width:46%;
+    padding: 2%;
+    color:#fff;
+    text-align: center;
+}
+.offer .validTill{
+    background: #f39c12;
+    color:#fff;
+    width:46%;
+    padding: 2%;
+    text-align: center;
+}
+.offer .offer_image .image{
+    width:100%;
+    height:100%;
+}
+.offer .action_buttons{
+    float:left;
+    width:100%;
+    text-align: center;
+    overflow: hidden;
+}
+
+.photo{
+    width:100%;
+    float: left;
+}
+.photo img{
+    width:100%;
+    min-height:200px;
+    max-height: 300px;
+}
+/* ---------- Actions --------*/
+.buy{
+    background: #8e44ad;
+    width:44%;
+    padding: 3%;
+    font-size:12px;
+    text-align: center;
+    color:#fff;
+    float:left;
+    font-family: 'Roboto', sans-serif;
+    position: relative;
+}
+.track{
+    background: #9b59b6;
+    width:44%;
+    padding: 3%;
+    font-size:12px;
+    text-align: center;
+    color:#fff;
+    float:left;
+    font-family: 'Roboto', sans-serif;
+    position: relative;
+}
+.buy:hover{
+    cursor: pointer;
+}

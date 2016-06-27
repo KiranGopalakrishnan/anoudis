@@ -1,0 +1,44 @@
+[17-May-2016 16:48:36 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000] [1045] Access denied for user 'admin'@'localhost' (using password: YES)' in /home/antinomcpanel/public_html/anoudis.com/users/core/class.locationManager.php:20
+Stack trace:
+#0 /home/antinomcpanel/public_html/anoudis.com/users/core/class.locationManager.php(20): PDO->__construct('mysql:host=loca...', 'admin', 'admin')
+#1 /home/antinomcpanel/public_html/anoudis.com/users/core/class.locationManager.php(23): locationManager->connect()
+#2 /home/antinomcpanel/public_html/anoudis.com/users/core/getNearestStores.php(10): locationManager->getNearestStores()
+#3 {main}
+  thrown in /home/antinomcpanel/public_html/anoudis.com/users/core/class.locationManager.php on line 20
+[17-May-2016 16:48:54 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000] [1045] Access denied for user 'admin'@'localhost' (using password: YES)' in /home/antinomcpanel/public_html/anoudis.com/users/core/class.locationManager.php:20
+Stack trace:
+#0 /home/antinomcpanel/public_html/anoudis.com/users/core/class.locationManager.php(20): PDO->__construct('mysql:host=loca...', 'admin', 'admin')
+#1 /home/antinomcpanel/public_html/anoudis.com/users/core/class.locationManager.php(23): locationManager->connect()
+#2 /home/antinomcpanel/public_html/anoudis.com/users/core/getNearestStores.php(10): locationManager->getNearestStores()
+#3 {main}
+  thrown in /home/antinomcpanel/public_html/anoudis.com/users/core/class.locationManager.php on line 20
+[17-May-2016 16:51:06 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000] [1045] Access denied for user 'admin'@'localhost' (using password: YES)' in /home/antinomcpanel/public_html/anoudis.com/users/core/class.locationManager.php:20
+Stack trace:
+#0 /home/antinomcpanel/public_html/anoudis.com/users/core/class.locationManager.php(20): PDO->__construct('mysql:host=loca...', 'admin', 'admin')
+#1 /home/antinomcpanel/public_html/anoudis.com/users/core/class.locationManager.php(23): locationManager->connect()
+#2 /home/antinomcpanel/public_html/anoudis.com/users/core/getNearestStores.php(10): locationManager->getNearestStores()
+#3 {main}
+  thrown in /home/antinomcpanel/public_html/anoudis.com/users/core/class.locationManager.php on line 20
+[17-May-2016 16:51:26 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000] [1045] Access denied for user 'admin'@'localhost' (using password: YES)' in /home/antinomcpanel/public_html/anoudis.com/users/core/class.locationManager.php:20
+Stack trace:
+#0 /home/antinomcpanel/public_html/anoudis.com/users/core/class.locationManager.php(20): PDO->__construct('mysql:host=loca...', 'admin', 'admin')
+#1 /home/antinomcpanel/public_html/anoudis.com/users/core/class.locationManager.php(23): locationManager->connect()
+#2 /home/antinomcpanel/public_html/anoudis.com/users/core/getNearestStores.php(10): locationManager->getNearestStores()
+#3 {main}
+  thrown in /home/antinomcpanel/public_html/anoudis.com/users/core/class.locationManager.php on line 20
+[17-May-2016 16:53:14 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000] [1045] Access denied for user 'admin'@'localhost' (using password: YES)' in /home/antinomcpanel/public_html/anoudis.com/users/core/class.locationManager.php:20
+Stack trace:
+#0 /home/antinomcpanel/public_html/anoudis.com/users/core/class.locationManager.php(20): PDO->__construct('mysql:host=loca...', 'admin', 'admin')
+#1 /home/antinomcpanel/public_html/anoudis.com/users/core/class.locationManager.php(23): locationManager->connect()
+#2 /home/antinomcpanel/public_html/anoudis.com/users/core/getNearestStores.php(10): locationManager->getNearestStores()
+#3 {main}
+  thrown in /home/antinomcpanel/public_html/anoudis.com/users/core/class.locationManager.php on line 20
+[17-May-2016 16:53:24 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000] [1045] Access denied for user 'admin'@'localhost' (using password: YES)' in /home/antinomcpanel/public_html/anoudis.com/users/core/class.locationManager.php:20
+Stack trace:
+#0 /home/antinomcpanel/public_html/anoudis.com/users/core/class.locationManager.php(20): PDO->__construct('mysql:host=loca...', 'admin', 'admin')
+#1 /home/antinomcpanel/public_html/anoudis.com/users/core/class.locationManager.php(23): locationManager->connect()
+#2 /home/antinomcpanel/public_html/anoudis.com/users/core/getNearestStores.php(10): locationManager->getNearestStores()
+#3 {main}
+  thrown in /home/antinomcpanel/public_html/anoudis.com/users/core/class.locationManager.php on line 20
+[24-May-2016 03:06:16 UTC] PHP Fatal error:  Call to undefined method businessManager::getHotDeals() in /home/antinomcpanel/public_html/anoudis.com/users/core/getHotDeals.php on line 10
+[18-Jun-2016 15:32:27 UTC] PHP Fatal error:  Class 'businessManager' not found in /home/antinomcpanel/public_html/anoudis.com/users/core/processCheckin.php on line 12

@@ -1,0 +1,364 @@
+.postBox{
+	width:48%;
+	float: left;
+	margin-top:5%;
+	box-shadow: 0px 0px 1px #CCC;
+	border-radius: 10px;
+	padding: 1%;
+}
+.postboxTitle{
+	font-family: 'Roboto', sans-serif;
+	text-align: center;
+	float: left;
+	width: 100%;
+	font-weight: 600;
+}
+.rightSideFacts{
+	width: 46%;
+	float: left;
+	margin-left: 3.8%;
+	margin-top: 5%;
+}
+.factSingle{
+	width: 90%;
+	padding: 4.5%;
+	border: solid 1px #e1e1e1;
+	border-radius: 10px;
+	float: left;
+}
+.factSpacer{
+	margin-top: 5%;
+}
+.factBox{
+	font-family: 'Roboto', sans-serif;
+	font-weight:500;
+	font-size: 14px;
+	float: left;
+	width: 70%;
+}
+.factImage{
+	float: left;
+	border:solid 1px #e3e3e3;
+	border-radius: 100%;
+	padding: 10px;
+}
+.facts{
+	float: left;
+	width: 100%;
+}
+.factBox ul{
+	float: left;
+	width: 100%;
+}
+.facts span{
+	font-size: 40px;
+	font-weight: 700;
+}
+.factBox li{
+	float: left;
+	color: #666;
+	list-style: none;
+	width: 40%;
+	text-align: center;
+	font-weight: 600;
+}
+.publishedDeals{
+	float: left;
+	width: 80%;
+	margin-left: 7%;
+	border: solid 1px #e4e4e4;
+	border-radius: 10px;
+	margin-top: 4%;
+}
+.dealSingle{
+	float: left;
+	width: 85%;
+	padding: 2% 5%;
+	margin-left: 2%;
+	border-bottom: solid 1px #f3f3f3;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 700;
+	font-size: 14px;
+}
+.dealTitle{
+	float: left;
+	width: 40%;
+}
+.postedDate{
+	margin-left: 5%;
+}
+.expiryDate{
+	margin-left: 5%;
+}
+.viewMore{
+	margin-left: 18%;
+}
+.postColumn{
+	float: left;
+	width: 88%;
+	margin-left:3%;
+}
+.rightSideAds{
+	margin-left: 2%;
+	width:22.5%;
+	float: left;
+}
+.paidAds{
+	margin-left: 2%;
+	width:29%;
+	float: left;
+	border: solid 1px #e5e5e5;
+	margin-top: 2%;
+}
+.paidAdSingle{
+	width: 100%;
+	float: left;
+}
+.paidAdSingle .adPhoto{
+	width:100%;
+	float: left;
+}
+.paidAdSingle .adPhoto img{
+	width:100%;
+	float: left;
+}
+.paidAdSingle .adContent{
+	width: 90%;
+	padding: 5%;
+	font-family: 'Roboto', sans-serif;
+	font-weight: bold;
+	font-size: 12px;
+	color:#666;
+	float: left;
+}
+.paidAdSingle .adButton{
+	width: 90%;
+	margin: 5%;
+	padding-top: 2%;
+	padding-bottom: 2%;
+	font-family: 'Roboto', sans-serif;
+	font-weight: bold;
+	color: #666;
+	border: solid 1px #e1e1e1;
+	border-radius: 5px;
+	font-size: 12px;
+	text-align: center;
+	float: left;
+}
+.postBox .postBoxHeader{
+	width:100%;
+	background: #f8f8f8;
+	float: left;
+	border-bottom: solid 2px #f1c40f;
+}
+.postBox .postBoxHeader .postOptions{
+	float: left;
+	width: 30%;
+	margin-left:30%;
+}
+.postBox .postBoxHeader span{
+	float: left;
+	padding: 2%;
+	width:29.3%;
+	text-align: center;
+	border-bottom: solid 2px #f8f8f8;
+	-webkit-transition: background 2s; /* Safari */
+	transition: background 2s;
+	-webkit-transition: border-bottom 2s; /* Safari */
+	transition: border-bottom 2s;
+}
+.postBox .postBoxHeader span:hover{
+	background: #fff;
+	border-bottom: solid 2px #f1c40f;
+	cursor: pointer;
+}
+.postBox .postBoxCenter{
+	float: left;
+	width:95%;
+	padding: 2.5%;
+	background: #fff;
+}
+.imagePost{
+	display: none;
+}
+.offerPost{
+	/*display: none;*/
+}
+.postBox .postBoxCenter #postdata {
+	width: 95%;
+	position: relative;
+	border-bottom-width: thin;
+	border-bottom-style: solid;
+	border-bottom-color: #CCC;
+	border-top: none;
+	border-left: none;
+	border-right: none;
+	height: 100px;
+	resize: none;
+	top: 0px;
+	margin-right: 5px;
+	margin-bottom: 5px;
+	margin-left: 5px;
+	padding:10px;
+}
+#new_postsubmit {
+	font-family: 'Roboto', sans-serif;
+	font-weight: bold;
+	font-size: 12px;
+	color: #FFF;
+	background-color: #DC5130;
+	position: relative;
+	height: 40px;
+	width: 100px;
+	left: 70%;
+	margin: 10px;
+	border: none;
+}
+.offerInput{
+	padding: 2%;
+	border: solid 1px #ccc;
+	border-radius: 10px;
+	margin-top:3%;
+	margin-left: 3%;
+	float: left;
+	font-family: 'Roboto', sans-serif;
+	font-weight: bold;
+	width:41%;
+}
+#OfferTitle,#OfferTags{
+	width:90%;
+}
+#OfferDesc{
+	width:90%;
+	resize: none;
+	min-height: 100px;
+}
+.imagePost input[type="file"]{
+	width: 0.1px;
+	height: 0.1px;
+	opacity: 0;
+	overflow: hidden;
+	position: absolute;
+	z-index: -1;
+}
+.singleImageSelecter{
+	height:40px;
+	width:100%;
+	font-family: 'Roboto', sans-serif;
+	font-weight: bold;
+	text-align: center;
+	float: left;
+	margin-top: 5%;
+}
+.singleImageSelecter label{
+	font-size: 80px;
+	color: #ccc;
+	padding-bottom: 7%;
+	padding-left: 25%;
+	padding-right: 25%;
+}
+.postFooter{
+	float: left;
+	width:100%;
+}
+.addEvent{
+	width:95%;
+	padding-left: 2.5%;
+	padding-right: 2.5%;
+	padding-top: 8%;
+	padding-bottom: 8%;
+	background: #fff;
+	border: solid 1px #e3e3e3;
+	float: left;
+	margin-top:7%;
+	text-align: center;
+	border-radius: 5px;
+}
+.followAds{
+	width:90%;
+	padding: 5%;
+	background: #fff;
+	float: left;
+	margin-top:8%;
+	border:solid 1px #e3e3e3;
+	text-align: center;
+	border-radius: 5px;
+}
+.followLogo{
+	border-radius: 100%;
+	border: solid 1px #e2e2e2;
+	margin-left: 40%;
+}
+.followAds .followSingleItem{
+	width: 100%;
+	float: left;
+	padding-bottom: 5%;
+	padding-top: 5%;
+	text-align: center;
+	border-bottom: solid 1px #e3e3e3;
+}
+.followSingleItem span{
+	font-family: 'Roboto', sans-serif;
+	font-weight:bold;
+	color: #666;
+	width: 90%;
+	padding: 5%;
+	float: left;
+}
+.followSingleItem .locName{
+	font-size: 12px;
+	text-align: center;
+	float: left;
+	margin-left: 20%;
+	width: 50%;
+}
+.followSingleItem span img{
+	text-align: center;
+	margin-left: 30%;
+}
+.followButton{
+	width:70%;
+	margin-left: 10%;
+	font-family: 'Roboto', sans-serif;
+	font-weight: bold;
+	background: #e74c3c;
+	color: #FFF;
+	float: left;
+	padding: 5%;
+}
+.addEvent .month{
+	color: #2ecc71;
+	font-family: 'Roboto', sans-serif;
+	font-size: 20px;
+	font-weight:bold;
+	float: left;
+	width:100%;
+	text-align: center;
+	margin-bottom: 2%;
+}
+.addEvent .addEventButton{
+	width:40%;
+	background: #2ecc71;
+	padding: 5%;
+	color:#FFF;
+	font-family: 'Roboto', sans-serif;
+	font-weight: bold;
+	margin-left: 25%;
+	float: left;
+}
+.addEvent .date{
+	color: #2ecc71;
+	font-family: 'Roboto', sans-serif;
+	font-size: 70px;
+	font-weight:bold;
+	float: left;
+	width:100%;
+	margin-bottom: 5%;
+}
+.newsFeed{
+	width:10%;
+	float: left;
+	margin-left:20%;
+	margin-top:10%;
+	box-shadow: 0px 0px 5px #CCC;
+}

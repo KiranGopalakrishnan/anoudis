@@ -20,25 +20,18 @@ class subscriptionManager
         require 'db.php';
         $this->dataConn = new PDO('mysql:host='.$host.';dbname='.$db.';charset=utf8', ''.$user.'',''.$pass.'');
     }
-    function addSubscription($item,$id){
-        $this->connect();
-        $check=$this->getSubscription($item);
-        var_dump($check);
-        if($check==false) {
-            $stmt = $this->dataConn->prepare("INSERT INTO `dealsvagon_fd`.`subscription_purchases` ( `businessId`, `subItemId`, `stripeId`, `dateTime`, `endDate`, `status`) VALUES (:businessId, :item, :stripeId, :dateTime, :endDate, :status)");
-            $stmt->bindValue(":item", $item, PDO::PARAM_STR);
-            $stmt->bindValue(":endDate", date("Y-m-d H:m:s", strtotime('+30 days')), PDO::PARAM_STR);
-            $stmt->bindValue(":dateTime", $this->Date, PDO::PARAM_STR);
-            $stmt->bindValue(":stripeId", $id, PDO::PARAM_STR);
+    function addSubscription($mId,$subId,$term,$stripeId){
+            $this->connect();
+            $stmt = $this->dataConn->prepare("INSERT INTO `subscription_purchases`(`merchantId`, `subItemId`, `stripeId`, `datetime`, `term`, `status`) VALUES ( :merchantId, :item, :stripeId, :datetime, :term, :status)");
+            $stmt->bindValue(":item", $subId, PDO::PARAM_STR);
+            $stmt->bindValue(":term", $term, PDO::PARAM_STR);
+            $stmt->bindValue(":datetime", $this->Date, PDO::PARAM_STR);
+            $stmt->bindValue(":stripeId", $stripeId, PDO::PARAM_STR);
             $stmt->bindValue(":status", "1", PDO::PARAM_STR);
-            $stmt->bindValue(":businessId", $_SESSION["BusinessId"], PDO::PARAM_STR);
+            $stmt->bindValue(":merchantId", $mId, PDO::PARAM_STR);
             $stmt->execute();
-        }
-        else{
-            return false;
-        }
-        $subData=$this->getSubscriptionData($item);
-        $this->addPoints($subData[0]["subPrice"]);
+        //$subData=$this->getSubscriptionData($subId);
+        //$this->addPoints($subData[0]["subPrice"]);
     }
     function getSubscription($sub){
         $this->connect();
@@ -68,7 +61,7 @@ class subscriptionManager
     {
         require_once 'class.businessManager.php';
         $bm=new businessManager();
-        $dt=$bm->getRemainingPoints();
+        $dt=$bm->getRemainingPoints($_SESSION["BusinessId"]);
         $this->connect();
         if (count($dt)<1)
         {
@@ -110,7 +103,7 @@ class subscriptionManager
     }
     function stripeInit(){
 
-        require_once('/stripe-php-3.12.1/init.php');
+        require_once('./stripe-php-3.12.1/init.php');
         $stripe = array(
             "secret_key"      => "sk_test_XxW7nUJgv88c3FV4dWfUpNtg",
             "publishable_key" => "pk_test_QTw0opvzku52xDEXZh05jznU"

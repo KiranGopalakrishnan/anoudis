@@ -36,7 +36,7 @@ session_destroy();
 
                 <div class="center_content_wrapper">
                     <div class="CreatorBoard">
-                        <form id="newBusiness" action="core/signupProcess.php" method="post" style="width:auto !important;" class="signupForm">
+                        <form id="newBusiness" style="width:auto !important;" class="signupForm">
                             <div class="formTitle">Sign up</div>
                             <input type="text" id="name" name="name" placeholder="Firstname Lastname" />
                             <input type="email" id="email" name="email" placeholder="Your E-Mail Address" />
@@ -48,12 +48,11 @@ session_destroy();
                                 <option>Female</option>
                             </select>
                             <input type="text" id="dob" onfocus="$(this).attr('type','date');" onblur="$(this).attr('type','text');" name="dob" placeholder="Date Of Birth" />
-                            <select name="countryName" id="countryName">
-                                <option>Country</option>
+                            <select name="cityName" id="cityName">
+                                <option value="1">City</option>
                             </select>
                             
                             <!--Php starts here-->
-                            //,ncsacs
                             
                             <?php
                              if($_GET["planId"]!="trial"){
@@ -81,7 +80,7 @@ session_destroy();
                                 $price= "$ 0 For 1 Month";
                                  $data="trial";
                             }
-                            echo"<div class=plan data=".$data." style='float:left;font-size: 16px;margin-top: 5%; width: 100%;border: solid 1px #f39c12;font-family:Roboto, sans-serif;'>
+                            echo"<div class=plan data=".$data." plan=".$_GET["planId"]." term=".$term." style='float:left;font-size: 16px;margin-top: 5%; width: 100%;border: solid 1px #f39c12;font-family:Roboto, sans-serif;'>
                                 <div class=iconDiv style='float: left;padding: 3%; background:#f39c12;color:#FFF;'>Selected Plan</div>
                                 <span class=planName  style='float: left;padding: 3%;'>".$plan."</span>
                                 <span class=planAmount  style='float: left;padding: 3%;color:#000;font-weight: bold;'>".$price."</span>
@@ -103,17 +102,19 @@ session_destroy();
         <script>
              var k = "anoudisEncrypt";
             var encrypted = CryptoJS.AES.encrypt($(".plan").attr('data'), k);
+             var term = $(".plan").attr('term');
             $(".submit").attr('data-key',encrypted);
             var price ="";
-                 var pln="";
-                 var id="";
+                 var pln=$(".plan").attr('plan');
+                 var id=$(".plan").attr('plan');
                  var handler = StripeCheckout.configure({
                  key: 'pk_test_QTw0opvzku52xDEXZh05jznU',
                  image: 'https://anoudis.com/img/logo.png',
                  locale: 'auto',
                  token: function(token) {
-                             $.ajax({type:"POST",url: "core/addUserToPlan.php",data:{stripeToken:token.id,plan:pln,planId:id}, success: function(response) {
-                            }
+                             $.ajax({type:"POST",url: "core/addUserToPlan.php",data:{stripeToken:token.id,plan:pln,planId:id,term:term}, success: function(response) {
+                            console.log(response);
+                             }
                         });
                     }
                  });
@@ -123,12 +124,24 @@ session_destroy();
                      var decryptedKey = CryptoJS.AES.decrypt($(".submit").attr("data-key"), k);
                      var price = decryptedKey;
                      if(price.toString(CryptoJS.enc.Utf8)!="trial") {
-                         alert(price);
-                         handler.open({
-                             name: 'Anoudis.com',
-                             description: '2 widgets',
-                             currency: "cad",
-                             amount: parseInt(price.toString(CryptoJS.enc.Utf8) + "00")
+                         //alert(price);
+                         var name1,email1,password1,sex1,city1,country1,dob1;
+                         name1=$("#name").val();
+                         email1=$("#email").val();
+                         password1=$("#password").val();
+                         sex1=$("#sex").val();
+                         dob1=$("#dob").val();
+                         city1=$("#cityName").val();
+                         $.ajax({type:"POST",url: "core/signupProcess.php",data:{name:name1,email:email1,dob:dob1,password:password1,sex:sex1,city:city1,accountType:"M"}, success: function(response) {
+                             if(response!="flase"){
+                                 handler.open({
+                                     name: 'Anoudis.com',
+                                     description: 'Anoudis Subscription',
+                                     currency: "cad",
+                                     amount: parseInt(price.toString(CryptoJS.enc.Utf8) + "00")
+                                 });
+                             }
+                         }
                          });
                      }
                  });

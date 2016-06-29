@@ -11,7 +11,7 @@ $dt=new userManager($_POST["email"],$_POST["email"],$_POST["password"]);
 $names=explode(" ",$_POST["name"]);
 $rst=$dt->Register($names[0],$names[1],"M",$_POST["sex"],date("Y-m-d",strtotime($_POST["dob"])));
 if($rst=="E1"){
-    header("location:../signup.php?error=E1");
+   echo false;
 } else{
     $rdt= $dt->Login();
     $to = $_POST["email"];
@@ -29,6 +29,6 @@ if($rst=="E1"){
 
 
     if($rdt==true) {
-         header("location:../newBusiness.php");
+         echo true;
     }
 }

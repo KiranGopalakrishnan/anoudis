@@ -166,11 +166,14 @@ strong { font-weight: 600; }
   text-align: left;
   font-weight: 300;
 }
+.form-control{
+  border:solid 1px #0e1319 !important;
+}
 .signupContain p.big{
   font-size: 27px !important;
   color: #27ae60 !important;
   font-family: 'Open Sans', sans-serif;
-  font-weight: bold;
+  font-weight: 300;
 }
 .signupContain p.small{
   font-size: 20px !important;
@@ -178,7 +181,7 @@ strong { font-weight: 600; }
 
 .btn:hover {
   color: #fff;
-  background-color: #27ae60;
+  background-color: #0e1319;
 }
 
 .btn:active,
@@ -187,7 +190,7 @@ strong { font-weight: 600; }
 .btn:active:focus {
   color: #fff;
   outline: none;
-  background-color: #fa5454;
+  background-color: #0e1319;
 }
 
 .cta-btn p {
@@ -586,7 +589,7 @@ blockquote cite {
   12.cta section
    ========================================================================== */
 
-.cta-section { background-color: #27ae60; }
+.cta-section { background-image:url("../img/bg.png"); }
 
 .cta-section .section-header { margin-bottom: 2.25em; }
 
@@ -818,7 +821,7 @@ blockquote cite {
 }
 
 .form-control:focus {
-  border-color: #fa5454;
+  border-color: #0e1319;
   outline: 0;
   box-shadow: none;
 }

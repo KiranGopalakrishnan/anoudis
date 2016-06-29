@@ -39,7 +39,7 @@
         </ul>
         <ul class="nav navbar-nav navbar-right">
           <li><a href="../merchants/login.php"><i class="fa fa-sign-in"></i> Login</a></li>
-          <li><a href="../merchants/signup.php" class="btn">JOIN US</a></li>
+          <li><a href="../merchants/signup.php?plan=trial&term=M" class="btn">JOIN US</a></li>
         </ul>
       </div>
     </div>
@@ -207,14 +207,14 @@
 
 <!--Video section end--> 
 
-<section class="bothSides">
+<!--<section class="bothSides">
   <div class="firstSide">
 
   </div>
   <div class="secondSide">
 
   </div>
-</section>
+</section>-->
 <!--reviews-->
 
 <section class="reviews section-spacing" id="pricing">

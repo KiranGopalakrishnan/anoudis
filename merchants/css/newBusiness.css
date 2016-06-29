@@ -16,6 +16,15 @@ form{
 .signupForm{
     margin-left: 30% !important;
 }
+.checkoutButton{
+    float: left;
+    padding: 3%;
+    color: #27ae60;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    background: #0e141b;
+    margin-left: 40%;
+}
 .loginForm{
     margin-left: 37.5% !important;
     margin-top: 13% !important;

@@ -123,7 +123,7 @@ function getToken($length)
             return "No Data Found";
         }
     }
-    public function Register($firstname,$lastname,$accType,$sex){
+    public function Register($firstname,$lastname,$accType,$sex,$dob){
         $this->encrypt();
         $this->connect();
         $stmt1 = $this->dataConn->prepare("SELECT * FROM `users` WHERE `E-Mail` = :userId");
@@ -132,13 +132,14 @@ function getToken($length)
         $rest = $stmt1->fetchAll(PDO::FETCH_ASSOC);
         //var_dump($rest);
         if(count($rest)==0) {
-            $stmt = $this->dataConn->prepare("INSERT INTO `users`(`Firstname`, `Lastname`, `Sex`,`AccountType`,`E-Mail`, `Username`, `Password`, `HashKey`, `Date`, `Status`) VALUES (:firstname,:lastname,:sex,:accType,:email,:username,:password,:key,:date,:status)");
+            $stmt = $this->dataConn->prepare("INSERT INTO `users`(`Firstname`, `Lastname`, `dob`, `Sex`,`AccountType`,`E-Mail`, `Username`, `Password`, `HashKey`, `Date`, `Status`) VALUES (:firstname,:lastname,:dob,:sex,:accType,:email,:username,:password,:key,:date,:status)");
             $stmt->bindValue(":email", $this->email, PDO::PARAM_STR);
             $stmt->bindValue(":username", $this->userName, PDO::PARAM_STR);
             $stmt->bindValue(":password", $this->resultkey, PDO::PARAM_STR);
             $stmt->bindValue(":firstname", $firstname, PDO::PARAM_STR);
             $stmt->bindValue(":lastname", $lastname, PDO::PARAM_STR);
             $stmt->bindValue(":sex", $sex, PDO::PARAM_STR);
+            $stmt->bindValue(":dob", $dob, PDO::PARAM_STR);
             $stmt->bindValue(":accType", $accType, PDO::PARAM_STR);
             $stmt->bindValue(":key", $this->GenKey, PDO::PARAM_STR);
             $stmt->bindValue(":date", $this->Date, PDO::PARAM_STR);

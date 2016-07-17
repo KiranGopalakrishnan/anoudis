@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Hospital</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href='https://fonts.googleapis.com/css?family=Roboto:400,100,300' rel='stylesheet' type='text/css'>
+        <link href='css/main.css' rel='stylesheet' type='text/css'>
+        <link href="css/jquery.bxslider.css" rel="stylesheet" />
+		<style>
+			.loggedIn{
+				font-family: 'Roboto', sans-serif;
+				padding:.5%;
+				width:99%;
+				background:#f39c12;
+				color:#fff;
+				float:right;
+				text-align:right;
+				
+			}
+			.logout{
+				font-family: 'Roboto', sans-serif;
+				padding:.5%;
+				background:#fff;
+				color:#666;
+				font-size:10px;
+				margin-left:2%;
+				border-radius:5px;
+				float:right;
+				text-align:center;
+				transition:all 2s;
+			}
+			.logout:hover{
+				background:#c0392b;
+				color:#fff;
+			}
+		</style>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+        <script type="text/javascript" src="js/jquery.bxslider.js"> </script>
+        <script>
+            $(document).ready(function(){
+                 $('.bxslider').bxSlider();
+				 $(".loggedIn").hide();
+                var lu=localStorage.getItem("login");
+				console.log(lu);
+				if(lu!="0"){
+				$(".loggedIn span").html(localStorage.getItem("username"));
+					$(".loggedIn").slideDown(2000);
+				}
+				$(".logout").on("click",function(){
+					localStorage.setItem("login", "0");
+					$(".loggedIn").slideUp(2000);
+				});
+            });
+        </script>
+    </head>
+    <body>
+	
+				<div class="loggedIn">Welcome <span>Kiran</span><a class="logout">Logout</a></div>
+        <div class="main_wrapper">
+            <div class="header">
+                <img src="images/logo.png" height="60" alt = " " />
+                <span class="title">Hospital</span>
+                <div class="menu">
+                	<span><a href="index.html">Home</a></span>
+                	<span><a href="registration.html"  style="text-decoration:none">Book Appointment</a></span>
+                        <a href="About_us.html" style="text-decoration:none" ><span>About us</span></a>
+                            <a href="login.html" style="text-decoration:none"><span>Login</span></a>
+                </div>
+            </div>
+            <div class="center_content">
+                <div class="slide">
+                    <ul class="bxslider">
+                        <li><img src="images/slide1.jpg" alt=" " /></li>
+                        <li><img src="images/slide2.jpg" alt=" "/></li>
+                        <li><img src="images/slide1.jpg" alt=" "/></li>
+                    </ul>
+                </div>
+                <div class="contents bgyellow">
+                    <h1> Why Us ? </h1>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since unknown printer.Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since unknown printer.Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since unknown printer.</p>
+                </div>
+                <div class="contents bggreen">
+                    <h1>Book an appointment today !</h1>
+                    <div class="button" onclick="location.href='registration.html';">Book Appointment</div>
+                </div>
+                <div class="contents">
+                    <h1>Our Faculty</h1>
+                    <img src="images/dr-1.jpg" class="im" alt=" ">
+                    <img src="images/dr-2.jpg" class="im" alt=" ">
+                    <img src="images/dr-3.jpg" class="im" alt=" ">
+                    <img src="images/dr-4.jpg" class="im" alt=" ">
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
